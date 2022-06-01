@@ -1,0 +1,5 @@
+Sally     78 84 79 86
+Rachel     68 76 87 76
+Melba     87 78 98 88
+Grace    76 67 89 0
+Lisa      68 76 65 87

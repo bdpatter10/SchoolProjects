@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?><TestSessionContainer xmlns="http://www.codecover.org/xml/testsession-container" Date="1631665114067" TestSessionContainerId="cb532fef-9607-461b-a8ed-f0b7252ef986" version="1.0">
+    <SrcFileList>
+        <SrcFile Content="package vend;&#10;&#10;/*Java program for Vending Machine. The class takes in the 2 parameters&#10;and returns whether the item can be dispensed or not */&#10;&#10;public class VendingMachine {&#10;&#10;&#9;public static String dispenseItem(int input, String item) {&#10;&#9;&#9;int cost = 0;&#10;&#9;&#9;int change = 0;&#10;&#9;&#9;String returnValue = &quot;&quot;;&#10;&#9;&#9;if (item == &quot;candy&quot;)&#10;&#9;&#9;&#9;cost = 20;&#10;&#9;&#9;if (item == &quot;coke&quot;)&#10;&#9;&#9;&#9;cost = 25;&#10;&#9;&#9;if (item == &quot;coffee&quot;)&#10;&#9;&#9;&#9;cost = 45;&#10;&#10;&#9;&#9;if (input &gt; cost) {&#10;&#9;&#9;&#9;change = input - cost;&#10;&#9;&#9;&#9;returnValue = &quot;Item dispensed and change of &quot; + Integer.toString(change) + &quot; returned&quot;;&#10;&#9;&#9;} else if (input == cost) {&#10;&#9;&#9;&#9;change = 0;&#10;&#9;&#9;&#9;returnValue = &quot;Item dispensed.&quot;;&#10;&#9;&#9;} else {&#10;&#9;&#9;&#9;change = cost - input;&#10;&#9;&#9;&#9;if (input &lt; 45)&#10;&#9;&#9;&#9;&#9;returnValue = &quot;Item not dispensed, missing &quot; + Integer.toString(change)&#10;&#9;&#9;&#9;&#9;&#9;&#9;+ &quot; cents. Can purchase candy or coke.&quot;;&#10;&#9;&#9;&#9;if (input &lt; 25)&#10;&#9;&#9;&#9;&#9;returnValue = &quot;Item not dispensed, missing &quot; + Integer.toString(change) + &quot; cents. Can purchase candy.&quot;;&#10;&#9;&#9;&#9;if (input &lt; 20)&#10;&#9;&#9;&#9;&#9;returnValue = &quot;Item not dispensed, missing &quot; + Integer.toString(change)&#10;&#9;&#9;&#9;&#9;&#9;&#9;+ &quot; cents. Cannot purchase item.&quot;;&#10;&#9;&#9;}&#10;&#10;&#9;&#9;return returnValue;&#10;&#10;&#9;}&#10;}&#10;" Filename="VendingMachine.java" Intrnl_Id="1"/>
+    </SrcFileList>
+    <CritList>
+        <CritListEntry Name="org.codecover.model.utils.criteria.LoopCoverage" PluginName="org.codecover"/>
+        <CritListEntry Name="org.codecover.model.utils.criteria.QMOCoverage" PluginName="org.codecover"/>
+        <CritListEntry Name="org.codecover.model.utils.criteria.ConditionCoverage" PluginName="org.codecover"/>
+        <CritListEntry Name="org.codecover.model.utils.criteria.BranchCoverage" PluginName="org.codecover"/>
+        <CritListEntry Name="org.codecover.model.utils.criteria.SynchronizedStatementCoverage" PluginName="org.codecover"/>
+        <CritListEntry Name="org.codecover.model.utils.criteria.StatementCoverage" PluginName="org.codecover"/>
+    </CritList>
+    <BoolOpList/>
+    <HierarchyLvlTypeList>
+        <HierarchyLvlType EnglishName="package" IntrnlName="package" Intrnl_Id="2"/>
+        <HierarchyLvlType EnglishName="method" IntrnlName="method" Intrnl_Id="3"/>
+        <HierarchyLvlType EnglishName="class" IntrnlName="class" Intrnl_Id="4"/>
+        <HierarchyLvlType EnglishName="default package" IntrnlName="default package" Intrnl_Id="5"/>
+    </HierarchyLvlTypeList>
+    <MASTRoot>
+        <HierarchyLvl HierarchyLvlId="20" HierarchyLvlTypeId="5" Intrnl_Id="6" Name="default package">
+            <Header/>
+            <LocList/>
+            <HierarchyLvl HierarchyLvlId="19" HierarchyLvlTypeId="2" Intrnl_Id="7" Name="vend">
+                <Header/>
+                <LocList/>
+                <HierarchyLvl HierarchyLvlId="18" HierarchyLvlTypeId="4" Intrnl_Id="8" Name="VendingMachine">
+                    <Header>
+                        <Loc EndOffset="171" SrcFileId="1" StartOffset="144"/>
+                    </Header>
+                    <LocList>
+                        <Loc EndOffset="1104" SrcFileId="1" StartOffset="144"/>
+                    </LocList>
+                    <HierarchyLvl HierarchyLvlId="17" HierarchyLvlTypeId="3" Intrnl_Id="9" Name="dispenseItem">
+                        <Header>
+                            <Loc EndOffset="233" SrcFileId="1" StartOffset="176"/>
+                        </Header>
+                        <LocList>
+                            <Loc EndOffset="1102" SrcFileId="1" StartOffset="176"/>
+                        </LocList>
+                        <StmntSeq Intrnl_Id="10">
+                            <LocList>
+                                <Loc EndOffset="251" SrcFileId="1" StartOffset="238"/>
+                                <Loc EndOffset="269" SrcFileId="1" StartOffset="254"/>
+                                <Loc EndOffset="296" SrcFileId="1" StartOffset="272"/>
+                                <Loc EndOffset="333" SrcFileId="1" StartOffset="299"/>
+                                <Loc EndOffset="369" SrcFileId="1" StartOffset="336"/>
+                                <Loc EndOffset="407" SrcFileId="1" StartOffset="372"/>
+                                <Loc EndOffset="1075" SrcFileId="1" StartOffset="411"/>
+                                <Loc EndOffset="1098" SrcFileId="1" StartOffset="1079"/>
+                            </LocList>
+                            <BasicStmnt CovItemId="S1" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="11">
+                                <LocList>
+                                    <Loc EndOffset="251" SrcFileId="1" StartOffset="238"/>
+                                </LocList>
+                            </BasicStmnt>
+                            <BasicStmnt CovItemId="S2" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="12">
+                                <LocList>
+                                    <Loc EndOffset="269" SrcFileId="1" StartOffset="254"/>
+                                </LocList>
+                            </BasicStmnt>
+                            <BasicStmnt CovItemId="S3" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="13">
+                                <LocList>
+                                    <Loc EndOffset="296" SrcFileId="1" StartOffset="272"/>
+                                </LocList>
+                            </BasicStmnt>
+                            <CondStmnt CovItemId="S4" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="14">
+                                <Branch CovItemId="B1" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="15">
+                                    <Cond/>
+                                    <LocList>
+                                        <Loc EndOffset="333" SrcFileId="1" StartOffset="323"/>
+                                    </LocList>
+                                    <StmntSeq Intrnl_Id="16">
+                                        <LocList>
+                                            <Loc EndOffset="333" SrcFileId="1" StartOffset="323"/>
+                                        </LocList>
+                                        <BasicStmnt CovItemId="S5" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="17">
+                                            <LocList>
+                                                <Loc EndOffset="333" SrcFileId="1" StartOffset="323"/>
+                                            </LocList>
+                                        </BasicStmnt>
+                                    </StmntSeq>
+                                </Branch>
+                                <Branch CovItemId="B2" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="18">
+                                    <Cond/>
+                                    <LocList/>
+                                    <StmntSeq Intrnl_Id="19">
+                                        <LocList/>
+                                    </StmntSeq>
+                                </Branch>
+                                <Keyword EndOffset="301" SrcFileId="1" StartOffset="299"/>
+                                <LocList>
+                                    <Loc EndOffset="333" SrcFileId="1" StartOffset="299"/>
+                                </LocList>
+                                <RootTerm CovItemId="C1" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="20">
+                                    <BasicBoolTerm Intrnl_Id="21">
+                                        <LocList>
+                                            <Loc EndOffset="318" SrcFileId="1" StartOffset="303"/>
+                                        </LocList>
+                                    </BasicBoolTerm>
+                                </RootTerm>
+                            </CondStmnt>
+                            <CondStmnt CovItemId="S6" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="22">
+                                <Branch CovItemId="B3" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="23">
+                                    <Cond/>
+                                    <LocList>
+                                        <Loc EndOffset="369" SrcFileId="1" StartOffset="359"/>
+                                    </LocList>
+                                    <StmntSeq Intrnl_Id="24">
+                                        <LocList>
+                                            <Loc EndOffset="369" SrcFileId="1" StartOffset="359"/>
+                                        </LocList>
+                                        <BasicStmnt CovItemId="S7" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="25">
+                                            <LocList>
+                                                <Loc EndOffset="369" SrcFileId="1" StartOffset="359"/>
+                                            </LocList>
+                                        </BasicStmnt>
+                                    </StmntSeq>
+                                </Branch>
+                                <Branch CovItemId="B4" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="26">
+                                    <Cond/>
+                                    <LocList/>
+                                    <StmntSeq Intrnl_Id="27">
+                                        <LocList/>
+                                    </StmntSeq>
+                                </Branch>
+                                <Keyword EndOffset="338" SrcFileId="1" StartOffset="336"/>
+                                <LocList>
+                                    <Loc EndOffset="369" SrcFileId="1" StartOffset="336"/>
+                                </LocList>
+                                <RootTerm CovItemId="C2" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="28">
+                                    <BasicBoolTerm Intrnl_Id="29">
+                                        <LocList>
+                                            <Loc EndOffset="354" SrcFileId="1" StartOffset="340"/>
+                                        </LocList>
+                                    </BasicBoolTerm>
+                                </RootTerm>
+                            </CondStmnt>
+                            <CondStmnt CovItemId="S8" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="30">
+                                <Branch CovItemId="B5" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="31">
+                                    <Cond/>
+                                    <LocList>
+                                        <Loc EndOffset="407" SrcFileId="1" StartOffset="397"/>
+                                    </LocList>
+                                    <StmntSeq Intrnl_Id="32">
+                                        <LocList>
+                                            <Loc EndOffset="407" SrcFileId="1" StartOffset="397"/>
+                                        </LocList>
+                                        <BasicStmnt CovItemId="S9" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="33">
+                                            <LocList>
+                                                <Loc EndOffset="407" SrcFileId="1" StartOffset="397"/>
+                                            </LocList>
+                                        </BasicStmnt>
+                                    </StmntSeq>
+                                </Branch>
+                                <Branch CovItemId="B6" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="34">
+                                    <Cond/>
+                                    <LocList/>
+                                    <StmntSeq Intrnl_Id="35">
+                                        <LocList/>
+                                    </StmntSeq>
+                                </Branch>
+                                <Keyword EndOffset="374" SrcFileId="1" StartOffset="372"/>
+                                <LocList>
+                                    <Loc EndOffset="407" SrcFileId="1" StartOffset="372"/>
+                                </LocList>
+                                <RootTerm CovItemId="C3" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="36">
+                                    <BasicBoolTerm Intrnl_Id="37">
+                                        <LocList>
+                                            <Loc EndOffset="392" SrcFileId="1" StartOffset="376"/>
+                                        </LocList>
+                                    </BasicBoolTerm>
+                                </RootTerm>
+                            </CondStmnt>
+                            <CondStmnt CovItemId="S10" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="38">
+                                <Branch CovItemId="B7" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="39">
+                                    <Cond/>
+                                    <LocList>
+                                        <Loc EndOffset="551" SrcFileId="1" StartOffset="429"/>
+                                    </LocList>
+                                    <StmntSeq Intrnl_Id="40">
+                                        <LocList>
+                                            <Loc EndOffset="456" SrcFileId="1" StartOffset="434"/>
+                                            <Loc EndOffset="547" SrcFileId="1" StartOffset="460"/>
+                                        </LocList>
+                                        <BasicStmnt CovItemId="S11" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="41">
+                                            <LocList>
+                                                <Loc EndOffset="456" SrcFileId="1" StartOffset="434"/>
+                                            </LocList>
+                                        </BasicStmnt>
+                                        <BasicStmnt CovItemId="S12" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="42">
+                                            <LocList>
+                                                <Loc EndOffset="547" SrcFileId="1" StartOffset="460"/>
+                                            </LocList>
+                                        </BasicStmnt>
+                                    </StmntSeq>
+                                </Branch>
+                                <Branch CovItemId="B8" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="43">
+                                    <Cond>
+                                        <Loc EndOffset="556" SrcFileId="1" StartOffset="552"/>
+                                    </Cond>
+                                    <LocList>
+                                        <Loc EndOffset="1075" SrcFileId="1" StartOffset="557"/>
+                                    </LocList>
+                                    <StmntSeq Intrnl_Id="44">
+                                        <LocList>
+                                            <Loc EndOffset="1075" SrcFileId="1" StartOffset="557"/>
+                                        </LocList>
+                                        <CondStmnt CovItemId="S13" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="45">
+                                            <Branch CovItemId="B9" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="46">
+                                                <Cond/>
+                                                <LocList>
+                                                    <Loc EndOffset="632" SrcFileId="1" StartOffset="576"/>
+                                                </LocList>
+                                                <StmntSeq Intrnl_Id="47">
+                                                    <LocList>
+                                                        <Loc EndOffset="592" SrcFileId="1" StartOffset="581"/>
+                                                        <Loc EndOffset="628" SrcFileId="1" StartOffset="596"/>
+                                                    </LocList>
+                                                    <BasicStmnt CovItemId="S14" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="48">
+                                                        <LocList>
+                                                            <Loc EndOffset="592" SrcFileId="1" StartOffset="581"/>
+                                                        </LocList>
+                                                    </BasicStmnt>
+                                                    <BasicStmnt CovItemId="S15" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="49">
+                                                        <LocList>
+                                                            <Loc EndOffset="628" SrcFileId="1" StartOffset="596"/>
+                                                        </LocList>
+                                                    </BasicStmnt>
+                                                </StmntSeq>
+                                            </Branch>
+                                            <Branch CovItemId="B10" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="50">
+                                                <Cond>
+                                                    <Loc EndOffset="637" SrcFileId="1" StartOffset="633"/>
+                                                </Cond>
+                                                <LocList>
+                                                    <Loc EndOffset="1075" SrcFileId="1" StartOffset="638"/>
+                                                </LocList>
+                                                <StmntSeq Intrnl_Id="51">
+                                                    <LocList>
+                                                        <Loc EndOffset="665" SrcFileId="1" StartOffset="643"/>
+                                                        <Loc EndOffset="807" SrcFileId="1" StartOffset="669"/>
+                                                        <Loc EndOffset="935" SrcFileId="1" StartOffset="811"/>
+                                                        <Loc EndOffset="1071" SrcFileId="1" StartOffset="939"/>
+                                                    </LocList>
+                                                    <BasicStmnt CovItemId="S16" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="52">
+                                                        <LocList>
+                                                            <Loc EndOffset="665" SrcFileId="1" StartOffset="643"/>
+                                                        </LocList>
+                                                    </BasicStmnt>
+                                                    <CondStmnt CovItemId="S17" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="53">
+                                                        <Branch CovItemId="B11" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="54">
+                                                            <Cond/>
+                                                            <LocList>
+                                                                <Loc EndOffset="807" SrcFileId="1" StartOffset="689"/>
+                                                            </LocList>
+                                                            <StmntSeq Intrnl_Id="55">
+                                                                <LocList>
+                                                                    <Loc EndOffset="807" SrcFileId="1" StartOffset="689"/>
+                                                                </LocList>
+                                                                <BasicStmnt CovItemId="S18" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="56">
+                                                                    <LocList>
+                                                                        <Loc EndOffset="807" SrcFileId="1" StartOffset="689"/>
+                                                                    </LocList>
+                                                                </BasicStmnt>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Branch CovItemId="B12" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="57">
+                                                            <Cond/>
+                                                            <LocList/>
+                                                            <StmntSeq Intrnl_Id="58">
+                                                                <LocList/>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Keyword EndOffset="671" SrcFileId="1" StartOffset="669"/>
+                                                        <LocList>
+                                                            <Loc EndOffset="807" SrcFileId="1" StartOffset="669"/>
+                                                        </LocList>
+                                                        <RootTerm CovItemId="C6" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="59">
+                                                            <BasicBoolTerm Intrnl_Id="60">
+                                                                <LocList>
+                                                                    <Loc EndOffset="683" SrcFileId="1" StartOffset="673"/>
+                                                                </LocList>
+                                                            </BasicBoolTerm>
+                                                        </RootTerm>
+                                                    </CondStmnt>
+                                                    <CondStmnt CovItemId="S19" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="61">
+                                                        <Branch CovItemId="B13" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="62">
+                                                            <Cond/>
+                                                            <LocList>
+                                                                <Loc EndOffset="935" SrcFileId="1" StartOffset="831"/>
+                                                            </LocList>
+                                                            <StmntSeq Intrnl_Id="63">
+                                                                <LocList>
+                                                                    <Loc EndOffset="935" SrcFileId="1" StartOffset="831"/>
+                                                                </LocList>
+                                                                <BasicStmnt CovItemId="S20" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="64">
+                                                                    <LocList>
+                                                                        <Loc EndOffset="935" SrcFileId="1" StartOffset="831"/>
+                                                                    </LocList>
+                                                                </BasicStmnt>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Branch CovItemId="B14" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="65">
+                                                            <Cond/>
+                                                            <LocList/>
+                                                            <StmntSeq Intrnl_Id="66">
+                                                                <LocList/>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Keyword EndOffset="813" SrcFileId="1" StartOffset="811"/>
+                                                        <LocList>
+                                                            <Loc EndOffset="935" SrcFileId="1" StartOffset="811"/>
+                                                        </LocList>
+                                                        <RootTerm CovItemId="C7" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="67">
+                                                            <BasicBoolTerm Intrnl_Id="68">
+                                                                <LocList>
+                                                                    <Loc EndOffset="825" SrcFileId="1" StartOffset="815"/>
+                                                                </LocList>
+                                                            </BasicBoolTerm>
+                                                        </RootTerm>
+                                                    </CondStmnt>
+                                                    <CondStmnt CovItemId="S21" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="69">
+                                                        <Branch CovItemId="B15" CovItemPrefix="vend.VendingMachine.java" Implct="false" Intrnl_Id="70">
+                                                            <Cond/>
+                                                            <LocList>
+                                                                <Loc EndOffset="1071" SrcFileId="1" StartOffset="959"/>
+                                                            </LocList>
+                                                            <StmntSeq Intrnl_Id="71">
+                                                                <LocList>
+                                                                    <Loc EndOffset="1071" SrcFileId="1" StartOffset="959"/>
+                                                                </LocList>
+                                                                <BasicStmnt CovItemId="S22" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="72">
+                                                                    <LocList>
+                                                                        <Loc EndOffset="1071" SrcFileId="1" StartOffset="959"/>
+                                                                    </LocList>
+                                                                </BasicStmnt>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Branch CovItemId="B16" CovItemPrefix="vend.VendingMachine.java" Implct="true" Intrnl_Id="73">
+                                                            <Cond/>
+                                                            <LocList/>
+                                                            <StmntSeq Intrnl_Id="74">
+                                                                <LocList/>
+                                                            </StmntSeq>
+                                                        </Branch>
+                                                        <Keyword EndOffset="941" SrcFileId="1" StartOffset="939"/>
+                                                        <LocList>
+                                                            <Loc EndOffset="1071" SrcFileId="1" StartOffset="939"/>
+                                                        </LocList>
+                                                        <RootTerm CovItemId="C8" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="75">
+                                                            <BasicBoolTerm Intrnl_Id="76">
+                                                                <LocList>
+                                                                    <Loc EndOffset="953" SrcFileId="1" StartOffset="943"/>
+                                                                </LocList>
+                                                            </BasicBoolTerm>
+                                                        </RootTerm>
+                                                    </CondStmnt>
+                                                </StmntSeq>
+                                            </Branch>
+                                            <Keyword EndOffset="559" SrcFileId="1" StartOffset="557"/>
+                                            <LocList>
+                                                <Loc EndOffset="1075" SrcFileId="1" StartOffset="557"/>
+                                            </LocList>
+                                            <RootTerm CovItemId="C5" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="77">
+                                                <BasicBoolTerm Intrnl_Id="78">
+                                                    <LocList>
+                                                        <Loc EndOffset="574" SrcFileId="1" StartOffset="561"/>
+                                                    </LocList>
+                                                </BasicBoolTerm>
+                                            </RootTerm>
+                                        </CondStmnt>
+                                    </StmntSeq>
+                                </Branch>
+                                <Keyword EndOffset="413" SrcFileId="1" StartOffset="411"/>
+                                <LocList>
+                                    <Loc EndOffset="1075" SrcFileId="1" StartOffset="411"/>
+                                </LocList>
+                                <RootTerm CovItemId="C4" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="79">
+                                    <BasicBoolTerm Intrnl_Id="80">
+                                        <LocList>
+                                            <Loc EndOffset="427" SrcFileId="1" StartOffset="415"/>
+                                        </LocList>
+                                    </BasicBoolTerm>
+                                </RootTerm>
+                            </CondStmnt>
+                            <BasicStmnt CovItemId="S23" CovItemPrefix="vend.VendingMachine.java" Intrnl_Id="81">
+                                <LocList>
+                                    <Loc EndOffset="1098" SrcFileId="1" StartOffset="1079"/>
+                                </LocList>
+                            </BasicStmnt>
+                        </StmntSeq>
+                    </HierarchyLvl>
+                </HierarchyLvl>
+            </HierarchyLvl>
+        </HierarchyLvl>
+    </MASTRoot>
+</TestSessionContainer>
